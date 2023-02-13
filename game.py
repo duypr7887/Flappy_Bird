@@ -142,7 +142,7 @@ while True:
         score_display('main game')
         score_sound_countdown -=1
         if score_sound_countdown <=0: 
-            score_sound_countdown.play()
+            score_sound.play()
             score_sound_countdown = 100
     else:
         screen.blit(game_over_surface,game_over_rect)
